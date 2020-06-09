@@ -1,0 +1,26 @@
+﻿@page  "/"
+<div class="robot">
+    <div class="robot-status">
+        <h2>状态</h2>
+        <div class="robot-status-con">
+            <h3>伺服状态</h3>
+            <p>@servoStatus</p>
+        </div>
+        <div class="robot-status-con">
+            <h3>当前机器人</h3>
+            <p>@currentRobot</p>
+        </div>
+    </div>
+    <div class="robot-teach">
+        <h2>操作</h2>
+        <div class="robot-teach-con">
+            <button>上电</button>
+            <button>J1+</button>
+        </div>
+    </div>
+</div>
+
+@code {
+    string servoStatus = "准备";
+    int currentRobot = 1;
+}
